@@ -1,0 +1,17 @@
+# Splunk Universal Forwarder Installation Command for SCCM
+# Updated with company server info
+
+## MSI Command (for SCCM Application:
+
+msiexec /i "SplunkUniversalForwarder.msi" /qn `
+    AGREETOLICENSE=YES `
+    RECEIVED_INDEXER="10.150.10.11:9997" `
+    DEPLOYMENT_SERVER="10.150.10.10:8089" `
+    WINEVENTLOG_APP_ENABLE=1 `
+    WINEVENTLOG_SEC_ENABLE=1 `
+    WINEVENTLOG_SYS_ENABLE=1
+
+## Notes:
+- RECEIVED_INDEXER = 10.150.10.11 (ECE-MTB-SPLKUF-01) on port 9997
+- DEPLOYMENT_SERVER = 10.150.10.10 (ECE-MTB-SPLKDEP-01) on port 8089
+- Verify ports are defaults, confirm with team if needed

@@ -1,0 +1,12 @@
+# Splunk Server Information
+# Last updated: 2026-06-09
+
+## Servers:
+- 10.150.10.10 - ECE-MTB-SPLKDEP-01 → likely Deployment Server (port 8089)
+- 10.150.10.11 - ECE-MTB-SPLKUF-01 → likely Indexer (port 9997)
+- 10.150.10.12 - ECE-MTB-SPLKHF-01 → Heavy Forwarder
+- 10.150.10.13 - (hostname not fully visible)
+
+## Default Ports (confirm with team if needed):
+- Indexer: 9997
+- Deployment Server: 8089
